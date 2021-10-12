@@ -1,0 +1,442 @@
+body {
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  #slider {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+  
+  }
+  @media (max-width:812px) {
+    #slider {
+      width: 100%;
+      height: 420px;
+      
+    }
+  }
+  #slider ul {
+    position: relative;
+    list-style: none;
+    height: 100%;
+    width: 10000%;
+    padding: 0;
+    margin: 0;
+    transition: all 750ms ease;
+    left: 0;
+  }
+  #slider ul li {
+    position: relative;
+    height: 100%;
+    float: left;
+  }
+  #slider ul li img{
+    width: 1345px;
+    height: 650px;
+    
+  }
+  @media (max-width:812px) {
+    #slider ul li img{
+      width: 812px;
+      height: 420px;
+      
+    }
+  }
+
+  #slider ul li .img-2{
+    width: 1350px;
+  }
+  #slider ul li .img-3{
+    width: 1350px;
+  }
+  #slider #prev, #slider #next {
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 2rem;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 150ms ease;
+  }
+  #slider #prev {
+    left: 10px;
+  }
+  #slider #next {
+    right: 10px;
+  }
+  #slider #prev:hover, #slider #next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 0;
+  }
+  .navbar-nav{
+    display: block;
+    float: right;
+    
+    
+  }
+  .navbar-nav a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    border-radius: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+  
+
+  }
+  .navbar-brand{
+    font-size: 32.5px;
+    padding: 10px;
+    font-family:'Times New Roman', Times, serif;
+     color: white;
+     position: relative;
+     margin-top: 5px;
+
+  }
+  .navbar .container-fluid{
+    background-image: linear-gradient(90deg, black ,lightseagreen,white);
+    position: fixed;
+
+  }
+  .welcome-section{
+    background-color: white;
+    
+  }
+  .welcome-heading{
+    background-color: white;
+     height: 80px;
+     padding-top: 15px; 
+  }
+  .welcome-heading h1{
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .welcome-content{
+    display: flex;
+    font-size: 20px;
+  min-height: 200px;
+  justify-content: center;
+  
+     
+  }
+  .welcome-content .content{
+    padding-top: 50px;
+     max-width: 35%;
+    padding-right: 15px;
+     align-items: center;
+     
+  }
+  .welcome-content .canvas{
+  max-width: 30%;
+  color: lightgray;
+  padding-left: 20px;
+
+    
+  }
+  .grid-content{
+   
+    font-size: 16px;
+    display: flex;
+    justify-content:space-between;
+    border-bottom: 1px black solid;
+    max-width: 50%;
+    margin-bottom: 30px;
+  
+  }
+  .grid-item{
+    max-width: 150px;
+    height: 280px;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .canvas .bi-umbrella{
+    font-size: 140px;
+    
+  }
+  h4{
+    padding: 10px;
+    color:lightseagreen;
+    font-weight: bold;
+  }
+  .icon{
+    background-color: lightseagreen;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 50px;
+  }
+  .grid-item .btn{
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+    font-family:monospace;
+  }
+  
+  .grid-item .btn:hover{
+    background-color: rgb(10, 87, 83);
+
+  }
+  .project-grid{
+  display: flex;
+  }
+  @media (max-width:812px){
+    .project-grid{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .project-grid-item{
+    background-color: rgb(230, 230, 230);
+    padding: 25px;
+    font-size: 14px;
+     
+  }
+  .project-grid-item .btn {
+    font-size: 12px;
+    border-radius: 5px;
+    color: white;
+    font-family:monospace;
+    font-weight: bold;
+  }
+  .project-grid-item .btn:hover{
+    background-color: rgb(10, 87, 83);
+
+  }
+  .project-grid-item:hover{
+    background-color: rgb(155, 201, 198);
+  }
+  .project-img img{
+  max-width: 200px;
+  height: 250px;
+    
+  }
+  .pricing-table{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  .pricing-table .table-name{
+    font-size: 14px;
+    max-width: 180px;
+    max-height: 250px;
+    padding: 15px;
+    text-align: center;
+  }
+  .pricing-section .pricing-table .black-b{
+ border-right: solid darkgray 1px;
+  }
+   
+  .table-name .btn{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+
+  }
+  .table-name .btn:hover{
+    background-color: rgb(10, 87, 83);
+  }
+  .table-name font{
+    justify-content: center;
+    color: darkgray;
+  }
+  .video-project{
+    background-color: lightseagreen;
+    min-height: 400px;
+    margin-top: 15px;
+
+  }
+  .video-project .head{
+     background-color: lightseagreen;
+     margin-top: 15px;
+  }
+  
+  .video-project .container-fluid{
+    display: flex;
+    justify-content: space-around;
+
+  }
+  @media (max-width:812px){
+    .video-project .container-fluid{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .profile-img img{
+    max-width: 250px;
+    height: 250px;
+      border-radius: 50px;
+    }
+    .profile-img img:hover{
+      opacity:0.4;
+      
+    }
+    .team-grid{
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+      margin-top: 15px;
+      font-size: 15px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      
+    }
+    .team-profile font{
+      color: rgb(143, 143, 143);
+    }
+    .centered{
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 17px;
+      color: rgb(229, 226, 226);
+      background-color: rgb(0 , 0, 0, 0.3);
+       min-width: 500px;
+      height: 220px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .centered h2{
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+    }
+    .centered .btn:hover{
+      background-color: rgb(10, 87, 83);
+    }
+    .life{
+      background-color: rgb(230, 230, 230);
+    padding: 15px;
+    margin-top: 25px;
+    }
+    .life-in{
+      width: 100%;
+      height: 350px;
+      
+    }
+    .life .welcome-heading{
+      background-color: rgb(230, 230, 230);
+    }
+    .newsletter{
+      padding: 0;
+    }
+    .cover{
+      width: 100%;
+       max-height: 280px;
+    }
+ .cover img{
+    width: 1350px;
+    height: 280px;
+ }
+ .news{  
+  position: relative;
+  top: -260px;
+  left:40%;
+ }
+ .news h2{
+   font-size: 30px;
+   font-weight: bold;
+   color: white;
+ }
+ .email{
+  
+   display: flex;
+ }
+ .email input{
+   width: 300px;
+   height: 35px;
+   border-radius: 5px;
+   
+ }
+ .inputtype{
+  position: relative;
+  top: -235px;
+  left:37%;
+  border: none;
+  font-size: 21px;
+  
+ }
+ .inputtype .btn{
+   font-size: 18px;
+   border-radius: 5px;
+ }
+ .content-blog{
+   display: flex;
+   justify-content: space-around;
+ }
+ .blog-grid{
+   max-width: 250px;
+   text-align: center;
+   font-size: 16px;
+ }
+ .blog-grid font{
+   color: darkgray;
+   font-weight: bold;
+ }
+ .blog-grid .btn{
+  font-size: 12px;
+  border-radius: 5px;
+  color: white;
+  font-family:monospace;
+  font-weight: bold;
+ }
+ .blog-grid .btn:hover{
+  background-color: rgb(10, 87, 83);
+ }
+ .blog-grid .img-b img{
+   width: 200px;
+   height: 120px;
+ }
+ .mapcon{
+   display: flex;
+   justify-content: space-around;
+   padding: 0;
+   margin: 0;
+ }
+ .map{
+  padding: 0;
+   margin-top: 49px;
+   width: 50%;
+ }
+ .contact{
+   padding: 25px;
+   margin-top: 49px;
+   background-color: lightseagreen;
+   width: 50%;
+ }
+ .contact  p{
+   font-size: 14px;
+ }
+ .contact .btn{
+   width: 180px;
+   font-size: 12px;
+   font-weight: bold;
+ }
+ .contact input{
+   width:175px ;
+   font-size: 14px;
+ }
+ .cyberfooter{
+   display: flex;
+   justify-content: space-around;
+   padding-top: 50px;
+   font-size: 13px;
+   background-color: white
+ }
+ .footer-item h2{
+   font-size: 17px;
+ }
+ .footer-item .bi{
+   font-size: 20px;
+ }
+ .slider img{
+   width: 300px;
+   height: 250px;
+ }
